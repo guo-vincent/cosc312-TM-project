@@ -76,7 +76,7 @@ First, we look at the rules for species ```A``` in the ```[BB|A|AB$``` chunk.
 
 *The parser always evaluates left precedence over right precedence. An animal only attempts to hunt other animals to the right if it cannot find the animals it needs to hunt on the left.* 
 
-*If we were currently reading the ```A``` using the same rules, ```BBABB``` evaluates to ```AB BB``` **not** ```BB ABB``` (spaces are not allowed in the board, but relevant characters are grouped together for clarity in this example) after hunting. This prevents ambiguity.*
+*If we were currently reading the ```A``` using the same rules, ```BBABB``` evaluates to ```AB BB``` **not** ```BB ABB``` (spaces added for clarity) after hunting. This prevents ambiguity.*
 
 *Also, animals that have already been marked as prey by one animal cannot be marked as prey again by another animal. Animals that likewise have sucessfully hunted other animals cannot be hunted by another animal (these animals have already established themselves as apex predators, and it would make little sense to hunt them). Everyone else? Fair game. This will make more sense in the example.*
 
